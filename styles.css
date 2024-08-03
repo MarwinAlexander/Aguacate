@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+}
+
+.body {
+  overflow: hidden;
+  height: 100%;
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  font-family: "Pixelify Sans", sans-serif;
+  color: #555555;
+  justify-content: center;
+  align-items: center;
+}
+
+.a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.* {
+  box-sizing: border-box;
+}
+
+.WIM:{ width :150px;
+ 
+}
+
+.menu {
+  text-decoration: none;
+  font-family: "Pixelify Sans", sans-serif;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-title {
+  display: block;
+  width: 150px;
+  height: 40px;
+  padding: 12px 0 0;
+  background: #6ACBFF;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Pixelify Sans", sans-serif;
+  text-transform: uppercase;
+  transition: 0.3s background-color;
+
+  
+}
+
+.menu-title:before {
+  content: "";
+  display: block;
+  height: 0;
+  border-top: 5px solid #9dc852;
+  border-left: (150px/ 2) solid transparent;
+  border-right: 150px/ 2) solid transparent;
+  border-bottom: 0 solid #dddddd;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 101;
+  transition:
+    0.2s 0.2s border-top ease-out,
+    0.3s border-top-color;
+}
+
+.menu-title:hover { background: #3e86a3; }
+.menu-title:hover:before { border-top-color: #3e86a3; }
+
+.menu:hover > .menu-title:before {
+  border-top-width: 0;
+  transition:
+    0.2s border-top-width ease-in,
+    0.3s border-top-color;
+}
+
+.menu-title:after {
+  content: "";
+  display: block;
+  height: 0;
+  border-left: (150px/ 2) solid transparent;
+  border-right: (150px/ 2) solid transparent;
+  border-bottom: 0 solid #ebebeb;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+  transition: 0.2s border-bottom ease-in;
+}
+
+.menu:hover > .menu-title:after {
+  border-bottom-width: 5px;
+  transition: 0.2s 0.2s border-bottom-width ease-out;
+}
+
+.menu-title_2nd { background: #6AC0FF; }
+.menu-title_2nd:hover { background: #3e86a3; }
+.menu-title_2nd:before { border-top-color: #3e86a3; }
+.menu-title_2nd:hover:before { border-top-color: #3e86a3; }
+
+.menu-title_3rd { background: #6ACBFF; }
+.menu-title_3rd:hover { background: #3e86a3; }
+.menu-title_3rd:before { border-top-color: #c97676; }
+.menu-title_3rd:hover:before { border-top-color: #3e86a3; }
+
+.menu-title_4th { background: #6AC0FF; }
+.menu-title_4th:hover { background: #3e86a3; }
+.menu-title_4th:before { border-top-color: #3e86a3; }
+.menu-title_4th:hover:before { border-top-color: #3e86a3; }
+
+.menu-dropdown {
+  min-width: 100%;
+  padding: 15px 0;
+  position: absolute;
+  background: #ebebeb;
+  z-index: 100;
+  transition:
+    0.5s padding,
+    0.5s background;
+}
+
+.menu-dropdown:after {
+  content: "";
+  display: block;
+  height: 0;
+  border-top: 5px solid #ebebeb;
+  border-left: (150px/ 2) solid transparent;
+  border-right: (150px/ 2) solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 101;
+  transition: 0.5s border-top;
+}
+
+.menu:not(:hover) > .menu-dropdown {
+  padding: 4px 0;
+  background: #dddddd;
+  z-index: 99;
+}
+
+.menu:not(:hover) > .menu-dropdown:after {
+  border-top-color: #dddddd;
+}
+
+.menu:not(:hover) > .menu-title:after {
+  border-bottom-color: #dddddd;
+}
+
+.menu-dropdown > * {
+  overflow: hidden;
+  height: 30px;
+  padding: 5px 10px;
+  background: rgba(0,0,0,0);
+  white-space: nowrap;
+  transition: 
+    0.5s height cubic-bezier(.73,.32,.34,1.5),
+    0.5s padding cubic-bezier(.73,.32,.34,1.5),
+    0.5s margin cubic-bezier(.73,.32,.34,1.5),
+    0.5s 0.2s color,
+    0.2s background-color;
+}
+
+.menu-dropdown > *:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+.menu:not(:hover) > .menu-dropdown > * {
+  visibility: hidden;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  color: rgba(25,25,25,0);
+  transition: 
+    0.5s 0.1s height,
+    0.5s 0.1s padding,
+    0.5s 0.1s margin,
+    0.3s color,
+    0.6s visibility;
+  z-index: 99;
+}
+
+.hList {
+  //overflow: hidden;
+}
+
+.hList > * {
+  float: left;
+}
+
+.hList > * + * {
+  margin-left: 0;
+}
+
+
+#boton-arriba{
+  width: 25px;
+  height: 25px;
+  background: #ffffff ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 300ms ease;
+  transform: scale(0);
+}
+
+#boton-arriba:hover{
+  transform: scale(1.1);
+  border-color: rgba(0,0,0,0.1);
+  
+}
+
+
+
+.pixelify {
+
+  
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.titulo {
+
+  background-image: url('https://cdn.discordapp.com/attachments/1267524618135015504/1267524753481142377/20240729_124634.jpg?ex=66a919ea&is=66a7c86a&hm=e94b17619e7528e6db2107827c83ca10a269a52466ee00c81410b42abdb3dd46&'); 
+  background-size: 100% 100px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto {
+  padding: 0 0;
+  font-size:none ;
+  color: white ;
+  background-image: url('https://cdn.discordapp.com/attachments/1267524618135015504/1267524685420167190/20240729_124835.jpg?ex=66afb15a&is=66ae5fda&hm=c944a7216fb5eeb4a96711f7fe8627cb0f560c6df85bd343bb917a8d60a19fff&');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido{
+  
+  white: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start  ;
+  align-items: center;
+  padding: 5px;
+}
+.contenido-img {
+  background-color: blue;
+  width: 100%;
+  height: 50%;
+}
+.contenido-img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.contenido-img-tex {
+  background-image: url('https://cdn.discordapp.com/attachments/1267524618135015504/1267524721088532500/20240729_124651.jpg?ex=66a919e2&is=66a7c862&hm=8a6835eb9cf4be25c4576a713b8529226c6d0bcb812b0918c663ff804a4f21a1&');
+  color: black;
+  background-color: white;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2px 2px;
+}
+
+.intro{
+  text-align: center;
+}
+
+.contenido-img-tex h2{
+  color: white;
+  font-size: 0.5;
+   font-family: "Pixelify Sans", sans-serif;
+   height: 80%;
+  width:  90%;
+}
+
+.contenido-img-tex a{
+  text-decoration: none;
+   align-items: center;
+   background-color: #6ACBFF;
+   font-family: "Pixelify Sans", sans-serif;
+   height: 80%;
+   width:  100%;
+   border: none;
+   border-radius: 5px;
+   text-align: center;
+   color: black;
+  
+}
+.contenido-img-tex p{
+  color: white;
+  font-size: 0.5;
+   font-family: "Pixelify Sans", sans-serif;
+   height: 80%;
+   width:  100%;
+}
+.contenido-articulo {
+  background-color: white; 
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.section-contenido{
+  
+  border: none;
+  width: 100%;
+  height: 5%;
+  background: #6ACBFF;
+  
+}
+
+.contenido{
+  
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 65%;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.footer-imagen{
+  width: 50%;
+}
+
+.footer-imagen img{
+  border: gray solid 2px;
+  object-fit: cover;
+  height: 100%;
+} 
+ 
+.footer-presentacion{
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1;
+  width:  30%;
+}
+
+.footer {
+  font-family: "Pixelify Sans", sans-serif;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 30%;
+  border-top: gray solid 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  
+}
+
+.autor{
+  color: white;
+  text-decoration: none;
+  
+}
+
+.Politicas{
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+.lista{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-repeat: repeat;
+  background-image:url('https://cdn.discordapp.com/attachments/1267524618135015504/1268680032293748922/939e9273e3d6ef4f281cda31e9e62488.gif?ex=66ad4dda&is=66abfc5a&hm=6aeab082dc9bd4dd900c91b39ab39b81d476b2d4cf6f0c0e5bd89d9706319b5b&');
+}
+
+.Name{
+  text-align: left;
+  padding: 10px;
+}
+
+.escenarios {
+  font-size: 50px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: left;
+  align-items: left;
+  padding: 10px 10px;
+  
+}
+
+.Precentacion{
+  padding: 10px 10px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.tarjeta{
+  color: black;
+  padding: 10px 10px;
+  background-color: white;
+  width: 55%;
+  height: 30%;
+  border: PowderBlue 5px solid;
+  border-radius: 20px
+  
+}
+
+.tarjeta{
+  padding: 10px 10px;
+  
+}
+.trol{
+  color: black;
+  font-size: 25px;
+   width: 700px;
+  height: 700px;
+  
+}
+
