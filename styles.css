@@ -235,7 +235,7 @@
 
 .titulo {
 
-  background-image: url('https://cdn.discordapp.com/attachments/1267524618135015504/1267524753481142377/20240729_124634.jpg?ex=66a919ea&is=66a7c86a&hm=e94b17619e7528e6db2107827c83ca10a269a52466ee00c81410b42abdb3dd46&'); 
+  background-image: url('gruby.jpeg'); 
   background-size: 100% 100px;
   background-repeat: no-repeat;
   justify-content: center;
@@ -274,7 +274,7 @@
 }
 
 .contenido-img-tex {
-  background-image: url('https://cdn.discordapp.com/attachments/1267524618135015504/1267524721088532500/20240729_124651.jpg?ex=66a919e2&is=66a7c862&hm=8a6835eb9cf4be25c4576a713b8529226c6d0bcb812b0918c663ff804a4f21a1&');
+  background-image: url('maqueta.jpeg');
   color: black;
   background-color: white;
   width: 100%;
@@ -398,7 +398,7 @@
   align-items: center;
   text-decoration: none;
   background-repeat: repeat;
-  background-image:url('https://cdn.discordapp.com/attachments/1267524618135015504/1268680032293748922/939e9273e3d6ef4f281cda31e9e62488.gif?ex=66ad4dda&is=66abfc5a&hm=6aeab082dc9bd4dd900c91b39ab39b81d476b2d4cf6f0c0e5bd89d9706319b5b&');
+  background-image:url('menu.gif');
 }
 
 .Name{
